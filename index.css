@@ -1,0 +1,129 @@
+body {
+    background-color: #e5e5e5;
+}
+a {
+    text-decoration: none;
+}
+
+#kakoytotext {
+    font-size: 4.5vmin;
+    transition: 0.5s;
+}
+.field {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    top: 21vmin;
+}
+.mainzone {
+    width: 45%;
+    height: auto;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    transition: 0.5s;
+}
+.mainzoneButsomeright {
+    height: auto;
+    position: relative;
+    margin: 0 0 0 10%;
+}
+
+
+#inputka {
+    position: relative;
+    border-radius: 11px;
+    width: 45%;
+    border: 2px solid #609;
+    padding: 2.5vmin;
+    transition: 0.5s;
+}
+
+.bedon {
+    position: relative;
+    cursor: pointer;
+    width: 35vmin;
+    height:53.5vmin;
+    max-height: 8.5vh;
+    margin: 2vh 0 0 0;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    background-size: 300% 100%;
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    font-size: 2.2vmin;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+    .bedon:hover {
+        background-position: 100% 0;
+        transition: .4s ease-in-out;
+    }
+
+#marginoff {
+    margin: 0 0 0 0;
+    font-size: 2.4vmin;
+    transition: 0.5s;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%; /*15vw*/
+    height: 55vmin;
+}
+
+.butfield {
+    cursor: pointer;
+    background-color: white;
+    height: 24vmin;
+    width: 24vmin;
+    border-radius: 23px;
+    box-shadow: 10px 10px 75px rgba(0, 0, 0, .11);
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 10px;
+    margin: 1vmin 1vmin 1vmin 1vmin;
+}
+
+    .butfield:hover {
+        background-color: #F8F8F8;
+        box-shadow: 10px 10px 75px rgba(0, 0, 0, .3);
+        height: 31vmin; /*15vh*/
+        width: 31vmin; /*15vw*/
+    }
+
+.imgInbut {
+    height: 78%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butInbut {
+    position: relative;
+    font-size: 3vmin;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #181818;
+    transition: 0.5s;
+}
+
+
+
+
+
+/*
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */

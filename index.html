@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css">
+    <title></title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <div class="field">
+        <div class="mainzone">
+            <div class="mainzoneButsomeright">
+
+                <h2 id="kakoytotext">Subscribe to me in social networks!</h2> 
+                <input type="text" id="inputka" />
+                <div class="bedon" onclick="sendEmail()">Send!</div>
+                <section><h5 id="marginoff"><br><br>Image taken from <a href="https://ru.freepik.com/">Freepik</a></h5></section>
+            </div>
+        </div>
+
+        <script>
+
+            var message = document.getElementById("inputka")
+            function sendEmail() {
+
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "mksmtimur@gmail.com",
+                    Password: "C1ADF00A871D113F412FA9DEC23F246817A4",
+                    To: 'vadymkon@knu.ua',
+                    From: "mksmtimur@gmail.com",
+                    Subject: message.value,
+                    Body: message.value
+                }).then(
+                    message => alert("mail sent successfully")
+                );
+            }
+        </script>
+
+        <aside class="gallery">
+
+            <a href="https://twitter.com/" target=”_blank”>
+                <div class="butfield" name="b1">
+                    <div class="imgInbut">
+                        <img src="img\twitter.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        Twitter
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.tiktok.com/" target=”_blank”>
+                <div class="butfield" name="b2">
+                    <div class="imgInbut">
+                        <img src="img\tt.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        TikTok
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=6Cr_8tvvQ0k" target=”_blank”>
+                <div class="butfield" name="b3">
+                    <div class="imgInbut">
+                        <img src="img\yt.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        YouTube
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100059054840313" target=”_blank”>
+                <div class="butfield" name="b4">
+                    <div class="imgInbut">
+                        <img src="img\fc.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        facebook
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/vadymkon/" target=”_blank”>
+                <div class="butfield" name="b5">
+                    <div class="imgInbut">
+                        <img src="img\inst.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        Instagram
+                    </div>
+                </div>
+            </a>
+            <a href="https://picsart.com/" target=”_blank”>
+                <div class="butfield" name="b6">
+                    <div class="imgInbut">
+                        <img src="img\picsart.png" alt="picsart" class="imgInbut">
+                    </div>
+                    <div class="butInbut">
+                        Pics<b>ART</b>
+                    </div>
+                </div>
+            </a>
+
+        </aside>
+    </div>
+</body>
+</html>
